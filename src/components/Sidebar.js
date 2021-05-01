@@ -23,7 +23,7 @@ const Sidebar = props => {
         <div className="contacts-btn bar-btn">
           <p className="btn-text">Contacts</p>
         </div>
-        <div className="logout-btn bar-btn">
+        <div onClick={props.logoutClickHandler} className="logout-btn bar-btn">
           <p className="btn-text">Logout</p>
         </div>
         {/* //make content component */}

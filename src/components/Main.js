@@ -24,7 +24,7 @@ const Main = props => {
         <>
             <div className="main">
                 {/* //make side bar component */}
-                <Sidebar inboxClickHandler={inboxClickHandler} newMailClickHandler={newMailClickHandler} />
+                <Sidebar logoutClickHandler={props.logoutClickHandler} inboxClickHandler={inboxClickHandler} newMailClickHandler={newMailClickHandler} />
                 <Content inboxClickHandler={inboxClickHandler} refreshHandler={props.refreshHandler} user={props.user} mailClickHandler={mailClickHandler} returnClickHandler={returnClickHandler} page={page} userMail={props.userMail}/>
             </div>
         </>

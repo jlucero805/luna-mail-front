@@ -30,11 +30,16 @@ function App() {
     setUserMail(allMail.data)
   }
 
+  const logoutClickHandler = () => {
+    setUserMail([])
+    setUser({})
+    setLoggedIn(false)
+  }
 
   if (loggedIn) {
     //mail inbox
     return (
-      <Main refreshHandler={refreshHandler} user={user} userMail={userMail}/>
+      <Main logoutClickHandler={logoutClickHandler} refreshHandler={refreshHandler} user={user} userMail={userMail}/>
     )
   } else if (!loggedIn) {
     return (

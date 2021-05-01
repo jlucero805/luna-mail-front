@@ -20,6 +20,7 @@ body {
 .main {
     display: flex;
     width: 90%;
+    min-width: 700px;
     margin: 2.3% auto;
 }
 
@@ -87,7 +88,7 @@ body {
     padding-bottom: 0%;
     font-size: 3rem;
     color: var(--luna-white);
-    border-bottom: 1px solid var(--luna-grey-line);
+    border-bottom: 2px solid var(--luna-grey-line);
 }
 .content-header-refresh {
     display: flex;

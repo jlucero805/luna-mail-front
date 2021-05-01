@@ -18,10 +18,10 @@
     border: 1px solid var(--luna-white);
     margin: 3em auto;
     border-radius: 2rem;
-    min-width: 30%;
-    max-width: 30%;
-    min-height: 60vh;
-    max-height: 60vh;
+    min-width: 400px;
+    min-height: 400px;
+    width: 30%;
+    height: 60vh;
 }
 
 .login-logo {
@@ -31,6 +31,7 @@
 }
 
 .login-username {
+    min-width: 200px;
     width: 30%;
     background-color: var(--luna-back-primary);
     border: none;
@@ -41,6 +42,7 @@
 }
 
 .login-password {
+    min-width: 200px;
     width: 30%;
     background-color: var(--luna-back-primary);
     border: none;
@@ -51,6 +53,7 @@
 }
 
 .login-button {
+    min-width: 200px;
     width: 30%;
     background-color: var(--luna-green);
     text-align: center;

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './static/css/App.css'
 import Main from './components/Main'
 import Login from './components/Login'
+import crypt from './util/cipher'
 import axios from 'axios'
 
 const url = 'https://agile-garden-69829.herokuapp.com'
@@ -9,6 +10,7 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(() => false)
   const [userMail, setUserMail] = useState(() => [])
   const [user, setUser] = useState(() => {})
+  console.log(crypt.encrypt("hey"))
   const loginClickHandler = async (mail, loginUsername) => {
     setUserMail(mail)
     setLoggedIn(true)

@@ -17,7 +17,7 @@ const Sidebar = props => {
         <div onClick={() => props.inboxClickHandler()} className="inbox-btn bar-btn">
           <p className="btn-text">Inbox</p>
         </div>
-        <div className="sent-btn bar-btn">
+        <div onClick={() => props.sentMailClickHandler()} className="sent-btn bar-btn">
           <p className="btn-text">Sent</p>
         </div>
         <div className="contacts-btn bar-btn">

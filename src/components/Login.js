@@ -26,19 +26,35 @@ const Login = props => {
         }
     }
 
+    // const jwtLoginClickHandler = async () => {
+    //     console.log("clicked")
+    //     const login = {
+    //         username: loginUsername,
+    //         passHash: loginPassword
+    //     }
+    //     const config = {
+    //         headers: { Authorization: token}
+    //     }
+    //     const res = await axios.post(`${url}/api/users/login`, login)
+    //     console.log(res.data)
+    //     if (res.data.error === undefined) {
+    //         console.log("not errer")
+    //         console.log("resdata", res.data)
+    //         return props.loginClickHandler(res.data, loginUsername)
+    //     } else if (res.data.error === 'error') {
+    //         setLoginPassword('')
+    //     }
+    // }
+
     const loginKeyHandler = (e) => {
         if (e.key === "Enter") {
             loginClickHandler()
         }
     }
 
-    const userChangeHandler = val => {
-        setLoginUsername(val)
-    }
+    const userChangeHandler = val => { setLoginUsername(val) }
 
-    const passChangeHandler = val => {
-        setLoginPassword(val)
-    }
+    const passChangeHandler = val => { setLoginPassword(val) }
 
     return (
         <>

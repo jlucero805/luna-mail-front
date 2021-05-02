@@ -2,14 +2,11 @@ import React, {useState} from 'react'
 import Mail from './Content/Mail'
 import MailDetail from './Content/MailDetail'
 import NewMail from './Content/NewMail'
-import axios from 'axios'
+import SentMail from './Content/SentMail'
+import service from '../services/service'
 
-const localUrl = "http://localhost:8080"
-const url = 'https://agile-garden-69829.herokuapp.com'
 
 const Content = props => {
-
-
     const page = props.page
     const [mail, setMail] = useState({})
     //mail state from new mail
@@ -50,7 +47,7 @@ const Content = props => {
             content: mailBody,
             dateSent: new Date()
         }
-        const posted = axios.post(`${url}/api/mail`, newMail)
+        const posted = service.poster('/api/mail', newMail)
         console.log(posted.data)
         setRecipient('')
         setMailBody('')
@@ -74,6 +71,12 @@ const Content = props => {
         return (
             <div className="content">
                 <NewMail titleChanger={titleChanger} mailSender={mailSender} recipientChanger={recipientChanger} tval={mailTitle} rval={recipient} val={mailBody} mailBodyChanger={mailBodyChanger} returnClickHandler={returnClickHandler} />
+            </div>
+        )
+    } else if (page === 'sentMail') {
+        return (
+            <div className="content">
+                <SentMail />
             </div>
         )
     }

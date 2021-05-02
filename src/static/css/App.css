@@ -12,9 +12,9 @@
 
 body {
     background-color: var(--luna-back-secondary);
-    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-    /* font-family: 'Courier New', Courier, monospace; */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
 }
 
 .main {
@@ -165,6 +165,10 @@ body {
     cursor: default;
 }
 
+.content-new-mail-btn:hover {
+    background-color: var(--luna-grey-line);
+}
+
 .content-new-mail-input {
     flex-direction: column;
     margin: 1.5% 10% 5% 12%;
@@ -202,8 +206,10 @@ body {
     border-radius: 1em;
     /* background-color: rgb(73, 12, 12); */
     background-color: rgba(32, 31, 31, 0.082);
-    margin: 1em .5em 1em .3em;
+    margin: .5em .5em .5em .3em;
     box-shadow: 0px 0px 5px 1px rgba(11, 78, 47, 0.404);
+    white-space: nowrap;
+    cursor: default;
 }
 
 .content-mail-obj:hover {
@@ -214,6 +220,9 @@ body {
 .content-mail-obj-title {
     font-size: 1.3rem;
     color: var(--luna-white);
+    padding: 0;
+    margin-top: .4em;
+    margin-bottom: .4em;
 }
 
 .content-mail-obj-from {
@@ -221,13 +230,16 @@ body {
     font-size: 1.3rem;
     color: var(--luna-grey-line);
     color: var(--luna-white);
+    margin-top: .4em;
+    margin-bottom: .4em;
 }
 
 .content-mail-obj-date {
     margin-right: 2%;
     font-size: 1.3rem;
-    color: var(--luna-grey-line);
     color: var(--luna-white);
+    margin-top: .4em;
+    margin-bottom: .4em;
 }
 
 ::-webkit-scrollbar {
@@ -252,6 +264,9 @@ body {
     padding-bottom: 0%;
     font-size: 1rem;
     color: var(--luna-white);
+    max-height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .mail-recipient {

@@ -1,4 +1,5 @@
 import React from 'react'
+import parse from '../../util/parseTime'
 
 const Mail = props => {
 
@@ -16,8 +17,8 @@ const Mail = props => {
                 {props.userMail !== undefined ? props.userMail.map(mail => (
                     <div onClick={() => props.mailClickHandler(mail)} key={mail._id} className="content-mail-obj">
                         <p className="content-mail-obj-from">{mail.from}</p>
-                        <p className="content-mail-obj-title">{mail.title}</p>
-                        <p className="content-mail-obj-date">{mail.dateSent}</p>
+                        <p className="content-mail-obj-title">{parse.parseTitle(mail.title)}</p>
+                        <p className="content-mail-obj-date">{parse.parseTime(mail.dateSent)}</p>
                     </div>
                 )) : null}
             </div>

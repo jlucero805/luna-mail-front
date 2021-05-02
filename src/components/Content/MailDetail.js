@@ -11,7 +11,12 @@ const MailDetail = props => {
                 <p className="content-header-text">from: {mailObject.from !== undefined ? mailObject.from : null}</p>
             </div>
             <div className="mail-detail-content">
-                <p>{mailObject.content !== undefined ? mailObject.content : null}</p>
+                <p>{mailObject.content !== undefined ? mailObject.content.split('\n').map((line, i) =>(
+                    <span key={i}>
+                        {line}
+                        <br/>
+                    </span>
+                )) : null}</p>
             </div>
         </>
     )

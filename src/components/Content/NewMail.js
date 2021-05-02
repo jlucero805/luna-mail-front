@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import axios from 'axios'
+import service from '../../services/service'
 
 const NewMail = props => {
 
@@ -18,7 +18,7 @@ const NewMail = props => {
     }
 
     const sendMailHandler = async () => {
-        const allUsers = await axios.get('https://agile-garden-69829.herokuapp.com/api/users')
+        const allUsers = await service.getter('/api/users')
         if (allUsers.data.find(user => user.username === props.rval)) {
             return props.mailSender()
         } else {

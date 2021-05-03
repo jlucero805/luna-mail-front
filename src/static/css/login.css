@@ -1,13 +1,13 @@
 :root {
-    --luna-white:  rgb(167, 160, 160);
+    /* --luna-white:  rgb(167, 160, 160);
     --luna-green: rgb(15, 112, 67);
     /* --luna-back-primary: rgb(14, 14, 20);
     --luna-back-secondary: rgb(9, 9, 14); */
-    --luna-back-primary: rgb(18, 18, 26);
-    --luna-back-secondary: rgb(11, 11, 17);
+    /* --luna-back-primary: rgb(18, 18, 26); */
+    /* --luna-back-secondary: rgb(11, 11, 17);
     --luna-grey-line: rgb(32, 31, 31);
     --luna-red:  rgb(109, 39, 39);
-    --luna-back-tertiary: rgb(22, 25, 34); 
+    --luna-back-tertiary: rgb(22, 25, 34);  */ 
 }
 
 .login {

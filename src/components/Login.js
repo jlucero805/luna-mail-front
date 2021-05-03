@@ -61,8 +61,8 @@ const Login = props => {
             <div className="login">
                 <img src={logo} className="login-logo"></img>
                 <p className="logo-text">Luna Mail</p>
-                <input onFocus={(e) => e.target.placeholder = ''} onBlur={e => e.target.placeholder = "username..."} onChange={(e) => userChangeHandler(e.target.value)} className="login-username"></input>
-                <input onFocus={(e) => e.target.placeholder = ''} onBlur={e => e.target.placeholder = "password..."} value={loginPassword} onKeyPress={loginKeyHandler} onChange={(e) => passChangeHandler(e.target.value)} type="password" name="password" className="login-password"></input>
+                <input placeholder="username..." onFocus={(e) => e.target.placeholder = ''} onBlur={e => e.target.placeholder = "username..."} onChange={(e) => userChangeHandler(e.target.value)} className="login-username"></input>
+                <input placeholder="password..." onFocus={(e) => e.target.placeholder = ''} onBlur={e => e.target.placeholder = "password..."} value={loginPassword} onKeyPress={loginKeyHandler} onChange={(e) => passChangeHandler(e.target.value)} type="password" name="password" className="login-password"></input>
                 <div onClick={e => loginClickHandler(e.key)} className="login-button">login</div>
             </div>
         </>

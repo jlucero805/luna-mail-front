@@ -17,6 +17,7 @@
     justify-content: center;
     border: 1px solid var(--luna-white);
     box-shadow: 0px 0px 7px 1px var(--luna-white);
+    background-color: var(--luna-back-primary);
     margin: 3em auto;
     border-radius: 2rem;
     min-width: 400px;
@@ -37,29 +38,31 @@
 
 .login-username {
     min-width: 200px;
-    width: 30%;
-    background-color: var(--luna-back-primary);
+    width: 35%;
+    background-color: var(--luna-back-secondary);
     border: none;
     border-radius: 1em;
     outline: none;
     font-size: 1.5em;
     margin-bottom: .2em;
+    color: var(--luna-white);
 }
 
 .login-password {
     min-width: 200px;
-    width: 30%;
-    background-color: var(--luna-back-primary);
+    width: 35%;
+    background-color: var(--luna-back-secondary);
     border: none;
     border-radius: 1em;
     outline: none;
     font-size: 1.5em;
     margin-bottom: .2em;
+    color: var(--luna-white);
 }
 
 .login-button {
     min-width: 200px;
-    width: 30%;
+    width: 35%;
     background-color: var(--luna-green);
     text-align: center;
     border: none;

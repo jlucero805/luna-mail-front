@@ -57,7 +57,7 @@ const Login = props => {
     const passChangeHandler = val => { setLoginPassword(val) }
 
     return (
-        <>
+        <div className="body">
             <div className="login">
                 <img src={logo} className="login-logo"></img>
                 <p className="logo-text">Luna Mail</p>
@@ -65,7 +65,7 @@ const Login = props => {
                 <input placeholder="password..." onFocus={(e) => e.target.placeholder = ''} onBlur={e => e.target.placeholder = "password..."} value={loginPassword} onKeyPress={loginKeyHandler} onChange={(e) => passChangeHandler(e.target.value)} type="password" name="password" className="login-password"></input>
                 <div onClick={e => loginClickHandler(e.key)} className="login-button">login</div>
             </div>
-        </>
+        </div>
     )
 }
 

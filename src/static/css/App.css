@@ -280,3 +280,7 @@ body {
     color: var(--luna-white);
     border-bottom: 1px solid var(--luna-grey-line);
 }
+
+@media only screen and (max-width: 600px) {
+    
+}
